@@ -40,8 +40,8 @@ const PokemonDetail = ({ }) => {
                 </div>
                 <div className="TypesContainer">
                     <h2>Types:</h2>
-                    <h3><span>{character.types?.[0].type.name}</span></h3>  
-                    <h3><span>{character.types?.[1].type.name}</span></h3>
+                    <h3><span>{character.types?.[0]?.type.name}</span></h3>
+                    <h3><span>{character.types?.[1]?.type.name}</span></h3>
                 </div>
                 <div className='StatsBase'>
                     <h2>Stats Base:</h2>
@@ -54,15 +54,15 @@ const PokemonDetail = ({ }) => {
                 </div>
                 <div className='Movements'>
                     <h2>Movements</h2>
-                  <div>
-                  {
-                    character.moves?.map((char) => (
-                        <div key={character.id}>
-                            {char.move?.name}
-                        </div>
-                    ))
-                  }
-                    </div> 
+                    <div>
+                        {
+                            character.moves?.map((char) => (
+                                <div key={char.moves?.move.name}>
+                                    {char.move?.name}
+                                </div>
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
         </div>

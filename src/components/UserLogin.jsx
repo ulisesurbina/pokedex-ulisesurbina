@@ -26,12 +26,12 @@ const UserLogin = () => {
                     type="text"
                     value={userName}
                     onChange={e => setUserName(e.target.value)}
-                    class="form-control"
+                    className="form-control"
                     placeholder="Name"
                     aria-label="Name"
                     aria-describedby="button-addon2"
                 />
-                <button class="btn btn-danger"><i class="fa-solid fa-paper-plane"></i></button>
+                <button className="btn btn-danger"><i className="fa-solid fa-paper-plane"></i></button>
             </div>
         </form>
     );
