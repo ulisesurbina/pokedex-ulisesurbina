@@ -208,14 +208,14 @@ body {
 }
 
 .InfoDetails {
-  background-color: #ffffff;
+  background-color:rgb(141, 226, 107);
   border-radius: 10px;
 }
 
 .BodyContainer {
   display: flex;
   justify-content: center;
-  background-color: #ffffff;
+  background-color:rgb(141, 226, 107);
   border-radius: 10px;
 }
 
@@ -229,7 +229,7 @@ body {
 }
 
 .TypesContainer {
-  background-color: #ffffff;
+  background-color:rgb(141, 226, 107);
   margin-top: 10px;
   border-radius: 10px;
 }
@@ -240,13 +240,13 @@ body {
 }
 
 .StatsBase {
-  background-color: #ffffff;
+  background-color:rgb(141, 226, 107);
   margin-top: 10px;
   border-radius: 10px;
 }
 
 .Movements {
-  background-color: #ffffff;
+  background-color: rgb(141, 226, 107);
   margin-top: 10px;
   border-radius: 10px;  
 }
