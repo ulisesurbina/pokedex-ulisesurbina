@@ -21,6 +21,7 @@ const PokemonDetail = ({ }) => {
     return (
         <div>
             <div>
+                <button onClick={() => navigate(-1)}>Return</button>
                 <div className="TitleContainerDetails">
                     <div className="TitleImg">
                     </div>
@@ -73,3 +74,101 @@ const PokemonDetail = ({ }) => {
 };
 
 export default PokemonDetail;
+
+// {
+//     type == "bug"
+//       ? "bug"
+//       : type == "dark"
+//       ? "dark"
+//       : type == "dragon"
+//       ? "dragon"
+//       : type == "electric"
+//       ? "electric"
+//       : type == "fairy"
+//       ? "fairy"
+//       : type == "fighting"
+//       ? "fighting"
+//       : type == "fire"
+//       ? "fire"
+//       : type == "flying"
+//       ? "flying"
+//       : type == "ghost"
+//       ? "ghost"
+//       : type == "grass"
+//       ? "grass"
+//       : type == "ground"
+//       ? "ground"
+//       : type == "ice"
+//       ? "ice"
+//       : type == "normal"
+//       ? "normal"
+//       : type == "poison"
+//       ? "poison"
+//       : type == "psychic"
+//       ? "psychic"
+//       : type == "rock"
+//       ? "rock"
+//       : type == "steel"
+//       ? "steel"
+//       : "water";
+//   }
+  
+  
+  
+  
+  
+//   16:35
+//   .bug {
+//     background: linear-gradient(135deg, green, rgb(8, 230, 8));
+//   }
+//   .dark {
+//      background: linear-gradient(135deg, black, rgb(1, 1, 39));
+//   }
+//   .dragon {
+//      background: linear-gradient(135deg,gold , rgb(218, 185, 0));
+//   }
+//   .electric {
+//      background: linear-gradient(135deg, yellow, orange);
+//   }
+//   .fairy {
+//      background: linear-gradient(135deg, pink, rgb(255, 78, 107));
+//   }
+//   .fighting {
+//      background: linear-gradient(135deg, rosybrown, rgb(100, 64, 64));
+//   }
+//   .fire {
+//     background: linear-gradient(135deg, red, yellow);
+//   }
+//   .flying {
+//      background: linear-gradient(135deg, silver, rgb(218, 218, 218));
+//   }
+//   .ghost {
+//      background: linear-gradient(135deg, midnightblue, rgb(28, 28, 80));
+//   }
+//   .grass {
+//      background: linear-gradient(135deg, rgb(107, 233, 107), rgb(8, 230, 8));
+//   }
+//   .ground {
+//      background: linear-gradient(135deg, brown, rgb(82, 17, 17));
+//   }
+//   .ice {
+//      background: linear-gradient(135deg, rgb(73, 73, 199), rgb(62, 62, 255));
+//   }
+//   .normal {
+//      background: linear-gradient(135deg, grey, rgb(247, 241, 241));
+//   }
+//   .poison {
+//      background: linear-gradient(135deg, rgb(0, 0, 92), rgb(16, 95, 0));
+//   }
+//   .psychic {
+//      background: linear-gradient(135deg, yellow, gold);
+//   }
+//   .rock {
+//      background: linear-gradient(135deg, brown, rgb(112, 99, 99));
+//   }
+//   .steel {
+//      background: linear-gradient(135deg, rgb(112, 112, 112), rgb(88, 87, 87));
+//   }
+//   .water {
+//      background: linear-gradient(135deg, blue, rgb(42, 42, 214));
+//   }

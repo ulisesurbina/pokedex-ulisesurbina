@@ -9,6 +9,9 @@ body {
   justify-content: center;
   align-items: center;
   background: #80d8be;
+  background-image: url(./images/tirar-pokeball.gif);
+  background-size: cover;
+  background-position-x: center;
 }
 
 .GeneralContainer {
@@ -97,6 +100,13 @@ body {
 
 .LoginInit {
   padding-top: 10rem;
+  background-image: url(./images/pokeball.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  background-position-x: 20px;
+  background-position-y: 0px;
+  width: 100%;
 }
 
 .InputLogin {

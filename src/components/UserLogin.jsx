@@ -19,6 +19,7 @@ const UserLogin = () => {
 
     return (
         <form onSubmit={submit} className="LoginInit">
+            <img src="./images" />
             <h1><b>Hello pokemon trainer!</b></h1>
             <h3>Give me your name to start:</h3>
             <div className='InputLogin'>
