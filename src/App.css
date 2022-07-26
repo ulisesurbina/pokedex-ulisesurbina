@@ -1,14 +1,16 @@
-*{
-  margin:0;
-  padding:0;
-  font-family:Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   background: #80d8be;
 }
+
 .GeneralContainer {
   display: flex;
   flex-wrap: wrap;
@@ -16,17 +18,19 @@ body {
   padding: 2rem;
   justify-content: center;
 }
+
 .Container {
   position: relative;
-  width:110px;
+  width: 110px;
   display: flex;
   display: inline;
   justify-content: center;
   flex-wrap: wrap;
   padding: 30px;
 }
+
 .Container .PokemonCard {
-  position:relative;
+  position: relative;
   max-width: 300px;
   height: 215px;
   background: #fff;
@@ -36,42 +40,48 @@ body {
   /* margin-left:9rem; */
   background-color: rgb(141, 226, 107);
   flex-direction: column;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-  transition:0.3s ease-in-out;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
 }
+
 .Container .PokemonCard:hover {
   height: 420px;
 }
+
 .Container .PokemonCard .ImgContainer {
-  position:relative;
+  position: relative;
   width: 255px;
   height: 255px;
   top: -60px;
   left: 30px;
-  z-index:1;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
+
 .Container .PokemonCard .ImgContainer img {
   max-width: 100%;
   border-radius: 4px;
   background: linear-gradient(to bottom, #150c63, #9248bd);
 }
+
 .Container .PokemonCard .Content {
-  position:relative;
-  margin-top:-140px;
-  padding:10px 20px;
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 20px;
   text-align: center;
-  color:#111;
+  color: #111;
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
+
 .Container .PokemonCard:hover .Content {
   visibility: visible;
   opacity: 1;
   margin-top: -40px;
   transition-delay: 0.3s;
 }
+
 .Content h6 {
   margin-bottom: 0;
 }
@@ -84,14 +94,17 @@ body {
   justify-content: center;
   height: 100vh;
 }
+
 .LoginInit {
   padding-top: 10rem;
 }
+
 .InputLogin {
   display: flex;
   width: 60%;
   margin: auto;
 }
+
 .InputLogin input {
   text-align: center;
   height: 71px;
@@ -102,12 +115,14 @@ body {
   font-size: 25px;
   box-shadow: 5px 5px 2px rgb(114, 110, 110);
 }
+
 .InputLogin button {
   border-radius: 50%;
   box-shadow: 5px 5px 2px rgb(114, 110, 110);
   padding: 18px;
-  border:0;
+  border: 0;
 }
+
 .InputLogin i {
   font-size: 2rem;
 }
@@ -115,11 +130,12 @@ body {
 .SearchPokemon {
   margin: auto;
 }
+
 .SearchPokemon input {
   text-align: center;
   background: linear-gradient(to bottom, #150c63, #9248bd);
   height: 40px;
-  color:white;
+  color: white;
   width: 15rem;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 40px;
@@ -127,33 +143,37 @@ body {
   font-size: 15px;
   box-shadow: 5px 5px 2px rgb(114, 110, 110);
 }
+
 .SearchPokemon button {
   background: linear-gradient(to bottom, #150c63, #9248bd);
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   border-radius: 50%;
   box-shadow: 5px 5px 2px rgb(114, 110, 110);
   padding: 10px;
-  border:0;
+  border: 0;
 }
+
 .SearchType {
   background: linear-gradient(to bottom, #d01616, #e06a6a);
   border-radius: 10%;
   box-shadow: 5px 5px 2px rgb(114, 110, 110);
   padding: 10px;
-  margin-top:1rem;
+  margin-top: 1rem;
 }
 
 .Paginate {
-  color:#111;
+  color: #111;
 }
-.Paginate ul{
+
+.Paginate ul {
   display: flex;
   padding: 1rem;
   justify-content: center;
   text-decoration: none;
   font-size: 1.2rem;
 }
-.Paginate li{
+
+.Paginate li {
   padding: 1rem;
   display: flex;
 }
@@ -161,60 +181,75 @@ body {
 .TitleContainerDetails {
   display: flex;
   display: inline-block;
-  
+
 }
-.TitleContainerDetails img{
+
+.TitleContainerDetails img {
   height: 300px;
 }
+
 .TitleImg {
-  width:400px;
+  width: 400px;
   height: 200px;
   background-image: url(./images/logo-pokemon.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin-bottom: 1rem;
 }
+
 .InfoDetails {
   background-color: #ffffff;
   border-radius: 10px;
 }
+
 .BodyContainer {
   display: flex;
   justify-content: center;
   background-color: #ffffff;
   border-radius: 10px;
 }
+
 .BodyContainer span {
-  color:rgb(57, 37, 124);
+  color: rgb(57, 37, 124);
   font-size: 2rem;
 }
+
 .BodyContainerInfo {
-  margin-left:auto;
+  margin-left: auto;
 }
+
 .TypesContainer {
- background-color: #ffffff;
- margin-top: 10px;
- border-radius: 10px;
+  background-color: #ffffff;
+  margin-top: 10px;
+  border-radius: 10px;
 }
-.TypesContainer span{
-  color:rgb(57, 37, 124);
+
+.TypesContainer span {
+  color: rgb(57, 37, 124);
   font-size: 2rem;
- }
+}
+
 .StatsBase {
   background-color: #ffffff;
   margin-top: 10px;
- border-radius: 10px;
+  border-radius: 10px;
 }
+
 .Movements {
   background-color: #ffffff;
   margin-top: 10px;
- border-radius: 10px;
+  border-radius: 10px;  
+}
+.ListMovements {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
 }
 
 .TextPokedex p {
- font-size: 2rem;
- margin-top: 2rem;
+  font-size: 2rem;
+  margin-top: 2rem;
 }
+
 .TextPokedex h1 {
   position: relative;
   font-size: 4em;
@@ -229,22 +264,37 @@ body {
   outline: none;
   animation: animate 5s linear infinite;
 }
-@keyframes animate
-{
-  0%, 18%,20%,50.1%,60%, 65.1%,80%,90.1%,92%
-  {
-    color:rgb(29, 16, 148);
+
+@keyframes animate {
+
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: rgb(29, 16, 148);
     text-shadow: none;
   }
-  18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
-  {
+
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
     color: rgb(252, 0, 0);
     text-shadow: 0 0 10px #03bcf4,
-    0 0 20px  #03bcf4,
-    0 0 40px  #03bcf4,
-    0 0 80px  #03bcf4,
-    0 0 160px  #03bcf4,
+      0 0 20px #03bcf4,
+      0 0 40px #03bcf4,
+      0 0 80px #03bcf4,
+      0 0 160px #03bcf4,
   }
 }
-
-

@@ -57,10 +57,10 @@ const PokemonDetail = ({ }) => {
                 </div>
                 <div className='Movements'>
                     <h2>Movements</h2>
-                    <div>
+                    <div className="ListMovements">
                         {
                             character.moves?.map((char) => (
-                                <div key={char.moves?.move.url}>
+                                <div key={char.move.name}>
                                     {char.move?.name}
                                 </div>
                             ))
