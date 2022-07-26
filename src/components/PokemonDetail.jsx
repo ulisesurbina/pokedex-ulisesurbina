@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const PokemonDetail = ({ }) => {
 
     const [character, setCharacter] = useState({});
     const { id } = useParams();
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         axios.get(`https://pokeapi.co/api/v2/pokemon/${id}/`)
@@ -35,7 +38,7 @@ const PokemonDetail = ({ }) => {
                     <div className="BodyContainerInfo">
                         <h4>Weight: <span>{character.weight}</span></h4>
                         <h4>Height: <span>{character.height}</span></h4>
-                        <h4><span>{character.abilities?.[1].ability.name}</span></h4>
+                        <h4><span>{character.abilities?.[1]?.ability.name}</span></h4>
                     </div>
                 </div>
                 <div className="TypesContainer">
@@ -57,7 +60,7 @@ const PokemonDetail = ({ }) => {
                     <div>
                         {
                             character.moves?.map((char) => (
-                                <div key={char.moves?.move.name}>
+                                <div key={char.moves?.move.url}>
                                     {char.move?.name}
                                 </div>
                             ))
