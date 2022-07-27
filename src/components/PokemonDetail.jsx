@@ -54,7 +54,7 @@ const PokemonDetail = () => {
                         <div className='StatsBase container'>
                             <h2>Stats Base:</h2>
                             <div className="Progress-bar Blue Stripes Shine">
-                                <b>HP: {character.stats?.[0].base_stat}</b> <span style={{width: `${character.stats?.[0].base_stat}%` }}></span>
+                                <b>HP: {character.stats?.[0].base_stat}</b><span style={{width: `${character.stats?.[0].base_stat}%` }}></span>
                             </div>
                             <div className="Progress-bar Red Stripes Shine">
                             <b>Attack: {character.stats?.[1].base_stat}</b><span style={{width:`${character.stats?.[1].base_stat}%`}}></span>
