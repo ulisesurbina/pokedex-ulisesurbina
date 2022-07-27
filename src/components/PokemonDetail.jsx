@@ -26,10 +26,10 @@ const PokemonDetail = () => {
                 </div>
                 <div className="GeneralColumns">
                     <div>
-                        <div className="TitleContainerDetails">
+                        <div className="TitleContainerDetails container">
                             <div className="TitleImg">
                             </div>
-                            <div className="InfoDetails">
+                            <div className="InfoDetails container">
                                 <img src={character.sprites?.other.home.front_default} alt="" />
                                 <h4># {character.id}</h4>
                             </div>
@@ -41,24 +41,36 @@ const PokemonDetail = () => {
                                 <h3>Abilities: <span>{character.abilities?.[0].ability.name}/</span></h3>
                             </div>
                             <div className="BodyContainerInfo">
-                                <h4>Weight: <span>{character.weight}</span></h4>
-                                <h4>Height: <span>{character.height}</span></h4>
+                                <h4>Weight: <span>{character.weight}Kg</span></h4>
+                                <h4>Height: <span>{character.height}m</span></h4>
                                 <h4><span>{character.abilities?.[1]?.ability.name}</span></h4>
                             </div>
                         </div>
-                        <div className="TypesContainer">
+                        <div className="TypesContainer container">
                             <h2>Types:</h2>
                             <h3><span>{character.types?.[0]?.type.name}</span></h3>
                             <h3><span>{character.types?.[1]?.type.name}</span></h3>
                         </div>
-                        <div className='StatsBase'>
+                        <div className='StatsBase container'>
                             <h2>Stats Base:</h2>
-                            <h3>HP: <span>{character.stats?.[0].base_stat}</span></h3>
-                            <h3>Attack: <span>{character.stats?.[1].base_stat}</span></h3>
-                            <h3>Defense: <span>{character.stats?.[2].base_stat}</span></h3>
-                            <h3>Special-attack: <span>{character.stats?.[3].base_stat}</span></h3>
-                            <h3>Special Defense: <span>{character.stats?.[4].base_stat}</span></h3>
-                            <h3>Speed: <span>{character.stats?.[5].base_stat}</span></h3>
+                            <div className="Progress-bar Blue Stripes Shine">
+                                <b>HP: {character.stats?.[0].base_stat}</b> <span style={{width: `${character.stats?.[0].base_stat}%` }}></span>
+                            </div>
+                            <div className="Progress-bar Red Stripes Shine">
+                            <b>Attack: {character.stats?.[1].base_stat}</b><span style={{width:`${character.stats?.[1].base_stat}%`}}></span>
+                            </div>
+                            <div className="Progress-bar Green Stripes Shine">
+                            <b>Defense: {character.stats?.[2].base_stat}</b><span style={{width:`${character.stats?.[2].base_stat}%`}}></span>
+                            </div>
+                            <div className="Progress-bar Orange Stripes Shine">
+                            <b>Special-attack: {character.stats?.[3].base_stat}</b><span style={{width:`${character.stats?.[3].base_stat}%`}}></span>
+                            </div>
+                            <div className="Progress-bar Yellow Stripes Shine">
+                            <b>Special Defense: {character.stats?.[4].base_stat}</b><span style={{width:`${character.stats?.[4].base_stat}%`}}></span>
+                            </div>
+                            <div className="Progress-bar Black Stripes Shine">
+                            <b>Speed: {character.stats?.[5].base_stat}</b><span style={{width:`${character.stats?.[5].base_stat}%`}}></span>
+                            </div>
                         </div>
                     </div>
                     <div className="TitleMovements">

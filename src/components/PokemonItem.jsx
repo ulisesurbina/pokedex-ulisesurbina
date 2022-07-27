@@ -82,11 +82,11 @@ const setColor = () => {
 
     return (
         <div className="Container" onClick={() => navigate(`/pokedex/${pokemon.id}`)}>
-            <div className="PokemonCard" >
+            <div className="PokemonCard container" >
                 <div className='ImgContainer' style={{background: setColor()}}>
                     <img src={pokemon.sprites?.other.home.front_default} alt=""/>
                 </div>
-                <div className="Content">
+                <div className="Content container">
                     <h2><b>{pokemon.name}</b></h2>
                     <h6><b>Types:</b> {pokemon.types?.[0].type.name},</h6>
                     <h6>{pokemon.types?.[1]?.type.name}</h6>
