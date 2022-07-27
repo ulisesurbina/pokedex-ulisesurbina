@@ -8,7 +8,7 @@ import ReactPaginate from 'react-paginate';
 
 const Pokedex = ({ pokemonsPerPage }) => {
 
-    const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+    // const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
     const [currentItems, setCurrentItems] = useState(null);
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);
@@ -21,7 +21,7 @@ const Pokedex = ({ pokemonsPerPage }) => {
     const [types, setTypes] = useState([]);
 
     useEffect(() => {
-        axios.get("https://pokeapi.co/api/v2/pokemon/")
+        axios.get("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1154/")
             .then(res => {
                 const { data: { results: pokemonsResponse } } = res
                 setPokemons(pokemonsResponse)
@@ -50,6 +50,7 @@ const Pokedex = ({ pokemonsPerPage }) => {
     }, [itemOffset, pokemonsPerPage, pokemons]);
 
     //https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1154/
+    //https://pokeapi.co/api/v2/pokemon/
 
     // console.log(pokemons)
 
@@ -88,7 +89,6 @@ const Pokedex = ({ pokemonsPerPage }) => {
         axios.get(e.target.value)
             .then(res => setPokemons(res.data.pokemon))
     }
-
 
 
     return (

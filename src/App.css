@@ -188,10 +188,24 @@ body {
   display: flex;
 }
 
+.ReturnButton button {
+  color:#56B636;
+  font-size: 4rem;
+  border:0;
+  padding: 0;
+  margin:0;
+  background-color: transparent;
+  position: absolute;
+  right:100px;
+}
+
+.GeneralColumns {
+display: flex;
+align-items: center;
+}
 .TitleContainerDetails {
   display: flex;
   display: inline-block;
-
 }
 
 .TitleContainerDetails img {
@@ -245,10 +259,20 @@ body {
   border-radius: 10px;
 }
 
+
+.TitleMovements {
+  background-color: rgb(141, 226, 107);
+  margin: 10px;
+  width: 328px;
+  border-radius: 10px; 
+  height: 20rem;
+}
 .Movements {
   background-color: rgb(141, 226, 107);
   margin-top: 10px;
-  border-radius: 10px;  
+  border-radius: 10px; 
+  height:30rem;
+  overflow-y: scroll; 
 }
 .ListMovements {
   display: grid;
@@ -262,7 +286,7 @@ body {
 
 .TextPokedex h1 {
   position: relative;
-  font-size: 4em;
+  font-size: 5em;
   letter-spacing: 15px;
   color: #ff0000;
   text-transform: uppercase;
@@ -272,6 +296,7 @@ body {
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
   line-height: 0.70em;
   outline: none;
+  font-weight: 800;
   animation: animate 5s linear infinite;
 }
 
