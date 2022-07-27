@@ -15,11 +15,76 @@ const PokemonItem = ({ pokemonUrl }) => {
 
     // console.log(pokemon)
 
+    const colors = [
+        { id: "bug",
+            color: "linear-gradient(135deg, green, rgb(8, 230, 8))"
+        }, {
+          id: "dark",
+             color: "linear-gradient(135deg, black, rgb(1, 1, 39))"
+        }, {
+          id: "dragon",
+             color: "linear-gradient(135deg,gold , rgb(218, 185, 0))"
+        }, {
+          id: "electric",
+            color: "linear-gradient(135deg, yellow, orange)"
+        }, {
+          id: "fairy",
+            color: "linear-gradient(135deg, pink, rgb(255, 78, 107))"
+        }, {
+          id: "fighting",
+             color: "linear-gradient(135deg, rosybrown, rgb(100, 64, 64))"
+        }, {
+          id: "fire",
+            color: "linear-gradient(135deg, red, yellow)"
+        }, {
+          id: "flying",
+             color: "linear-gradient(135deg, silver, rgb(218, 218, 218)"
+        }, {
+          id: "ghost",
+             color: "linear-gradient(135deg, midnightblue, rgb(28, 28, 80))"
+        }, {
+          id: "grass",
+             color: "linear-gradient(135deg, rgb(107, 233, 107), rgb(8, 230, 8))"
+        }, {
+          id: "ground",
+             color: "linear-gradient(135deg, brown, rgb(82, 17, 17))"
+        }, {
+          id: "ice",
+             color: "linear-gradient(135deg, rgb(73, 73, 199), rgb(62, 62, 255))"
+        }, {
+          id: "normal",
+             color: "linear-gradient(135deg, grey, rgb(247, 241, 241))"
+        }, {
+          id: "poison",
+             color: "linear-gradient(135deg, rgb(0, 0, 92), rgb(16, 95, 0))"
+        }, {
+          id: "psychic",
+             color: "linear-gradient(135deg, yellow, gold)"
+        }, {
+          id: "rock",
+             color: "linear-gradient(135deg, brown, rgb(112, 99, 99))"
+        }, {
+          id: "steel",
+             color: "linear-gradient(135deg, rgb(112, 112, 112), rgb(88, 87, 87))"
+        }, {
+          id: "water",
+             color: "linear-gradient(135deg, blue, rgb(42, 42, 214)"
+        }
+]
+
+const setColor = () => {
+    for(let i in colors) {
+        if(colors[i].id === pokemon.types?.[0].type.name) {
+            return colors[i].color
+        }
+    }
+}
+
     return (
         <div className="Container" onClick={() => navigate(`/pokedex/${pokemon.id}`)}>
-            <div className="PokemonCard">
-                <div className='ImgContainer'>
-                    <img src={pokemon.sprites?.other.home.front_default} alt="" />
+            <div className="PokemonCard" >
+                <div className='ImgContainer' style={{background: setColor()}}>
+                    <img src={pokemon.sprites?.other.home.front_default} alt=""/>
                 </div>
                 <div className="Content">
                     <h2><b>{pokemon.name}</b></h2>

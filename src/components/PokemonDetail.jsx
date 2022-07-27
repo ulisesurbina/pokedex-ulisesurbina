@@ -8,8 +8,6 @@ const PokemonDetail = ({ }) => {
     const [character, setCharacter] = useState({});
     const { id } = useParams();
 
-    const navigate = useNavigate();
-
     useEffect(() => {
         axios.get(`https://pokeapi.co/api/v2/pokemon/${id}/`)
             .then(res => setCharacter(res.data))

@@ -64,7 +64,7 @@ body {
 .Container .PokemonCard .ImgContainer img {
   max-width: 100%;
   border-radius: 4px;
-  background: linear-gradient(to bottom, #150c63, #9248bd);
+  /* background: linear-gradient(to bottom, #150c63, #9248bd); */
 }
 
 .Container .PokemonCard .Content {
