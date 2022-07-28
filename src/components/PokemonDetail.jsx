@@ -63,10 +63,10 @@ const PokemonDetail = () => {
                             <b>Defense: {character.stats?.[2].base_stat}</b><span style={{width:`${character.stats?.[2].base_stat}%`}}></span>
                             </div>
                             <div className="Progress-bar Orange Stripes Shine">
-                            <b>Special-attack: {character.stats?.[3].base_stat}</b><span style={{width:`${character.stats?.[3].base_stat}%`}}></span>
+                            <b>Special-attack:{character.stats?.[3].base_stat}</b><span style={{width:`${character.stats?.[3].base_stat}%`}}></span>
                             </div>
                             <div className="Progress-bar Yellow Stripes Shine">
-                            <b>Special Defense: {character.stats?.[4].base_stat}</b><span style={{width:`${character.stats?.[4].base_stat}%`}}></span>
+                            <b>Special-defense:{character.stats?.[4].base_stat}</b><span style={{width:`${character.stats?.[4].base_stat}%`}}></span>
                             </div>
                             <div className="Progress-bar Black Stripes Shine">
                             <b>Speed: {character.stats?.[5].base_stat}</b><span style={{width:`${character.stats?.[5].base_stat}%`}}></span>
